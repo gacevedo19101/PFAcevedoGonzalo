@@ -1,4 +1,4 @@
-.img {
+.imgFirst {
   width: 100%;
   height: 100%;
 }
@@ -6,6 +6,37 @@
 div img {
   height: 100px;
   width: 100px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.selectorCatalogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */

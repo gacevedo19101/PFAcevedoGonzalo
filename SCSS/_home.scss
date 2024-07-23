@@ -1,0 +1,32 @@
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+header{
+    div 
+    {
+    @include flex-row-center;
+    }
+    nav
+    {ul{
+        @include flex-row-center;
+        justify-content: space-evenly;
+    }
+    }
+}
+
+.selectorCatalogo
+{
+    @include flex-row-center;
+    justify-content: space-evenly;
+}
+ article 
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
