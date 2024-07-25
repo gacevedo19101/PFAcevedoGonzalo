@@ -1,0 +1,13 @@
+header{
+    position: absolute;
+    div{
+        
+    }
+    nav{
+        ul{
+            width: 600px;
+            @include flex-row-center;
+            justify-content: space-around;
+    }
+    }
+}
