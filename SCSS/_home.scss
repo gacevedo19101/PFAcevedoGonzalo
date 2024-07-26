@@ -1,13 +1,84 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+//-----------------------------HEADER-----------------------------------//
 header{
-    position: absolute;
-    div{
-        
+    section.nav{
+        background-color: hsl(0, 0%, 0%);
+        color: antiquewhite;
+        @include flex-row-center;
+        justify-content: space-between;
+        height: 14vh;
+        div{
+            width: 50%;
+            padding: 2%;
+            color: #e830ce;
+            h1{
+                font-weight: bold;
+            }
+        }
+        nav{
+            width: 50%;
+            padding: 2%;
+            ul{
+                @include flex-row-center;
+                justify-content: space-between;
+             }
+            }  
+        }
     }
-    nav{
-        ul{
-            width: 600px;
+//-----------------------------BODY-----------------------------------//
+main{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section{
+        background-color: $colorPrincipal;
+        padding: 40px;
+        width: 80%;
+        div.selectorCategoria{
+            @include flex-row-center;
+            justify-content: space-evenly;
+        }
+        div.textoImagen{
+            @include flex-row-center;
+            justify-content: space-evenly;
+        }
+        div.socialRed{
             @include flex-row-center;
             justify-content: space-around;
+        }
+        div.centerSection
+        {
+            @include flex-row-center;
+        }
     }
+}
+//-----------------------------FOOTER-----------------------------------//
+footer{
+    background-color: black;
+    color: aliceblue;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+}
+//-----------------------------IMAGENES-----------------------------------//
+.imgFirst
+{
+    width: 100%;
+    height: 100%;
+}
+
+div{
+    img{
+        height: 200px;
+        width: 200px;
+    }
+}
+h3{
+    font-weight: bold;
 }

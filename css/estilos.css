@@ -1,52 +1,74 @@
-header {
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header section.nav {
   background-color: hsl(0, 0%, 0%);
-  color: aliceblue;
+  color: antiquewhite;
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
   height: 14vh;
 }
-header div {
-  font-family: "Poppins", sans-serif;
+header section.nav div {
+  width: 50%;
+  padding: 2%;
+  color: #e830ce;
+}
+header section.nav div h1 {
+  font-weight: bold;
+}
+header section.nav nav {
   width: 50%;
   padding: 2%;
 }
-header nav {
-  width: 50%;
-  padding: 2%;
-}
-header nav ul {
+header section.nav nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
 }
 
-section div.selectorCategoria {
+main {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section {
+  background-color: #e8e8e8;
+  padding: 40px;
+  width: 80%;
+}
+main section div.selectorCategoria {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
 }
-section div.textoImagen {
+main section div.textoImagen {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
 }
-section div.socialRed {
+main section div.socialRed {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-around;
 }
-section div.titleSection {
+main section div.centerSection {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+footer {
+  background-color: black;
+  color: aliceblue;
+}
 footer div {
   display: flex;
   flex-direction: column;
@@ -61,6 +83,10 @@ footer div {
 div img {
   height: 200px;
   width: 200px;
+}
+
+h3 {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=estilos.css.map */
