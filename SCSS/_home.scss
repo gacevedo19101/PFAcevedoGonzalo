@@ -1,21 +1,21 @@
 body{
     font-family: "Poppins", sans-serif;
+    background-color: black;
 }
 
-//-----------------------------HEADER-----------------------------------//
+//-----------------------------HEADER-----------------------------------
 header{
     section.nav{
         background-color: hsl(0, 0%, 0%);
         color: antiquewhite;
-        @include flex-row-center;
-        justify-content: space-between;
-        height: 14vh;
         div{
             width: 50%;
-            padding: 2%;
-            color: #e830ce;
-            h1{
-                font-weight: bold;
+            @include flex-row-center;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                height: 80%;
+                width: 50%;
             }
         }
         nav{
@@ -25,15 +25,29 @@ header{
                 @include flex-row-center;
                 justify-content: space-between;
              }
-            }  
+            }
+            @include flex-row-center;
+            justify-content: space-between;
+            height: 14vh;
         }
     }
-//-----------------------------BODY-----------------------------------//
+//--------------------------ARTICLE IAMGEN PRINCIPAL-------------------
+article.imgFirst{
+    width: 100%;
+    @include flex-row-center;
+    div{
+        width: 80%;
+        img{
+            width: 100%;
+            height: 100%;
+            height: 500px;
+            object-fit: none;
+       }
+    }
+}
+//-----------------------------MAIN-----------------------------------
 main{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     section{
         background-color: $colorPrincipal;
         padding: 40px;
@@ -56,9 +70,8 @@ main{
         }
     }
 }
-//-----------------------------FOOTER-----------------------------------//
+//-----------------------------FOOTER-----------------------------------
 footer{
-    background-color: black;
     color: aliceblue;
     div{
         display: flex;
@@ -66,17 +79,13 @@ footer{
         align-items: center;
     }
 }
-//-----------------------------IMAGENES-----------------------------------//
-.imgFirst
-{
-    width: 100%;
-    height: 100%;
-}
+//-----------------------------IMAGENES-----------------------------------
 
 div{
     img{
         height: 200px;
         width: 200px;
+        object-fit: cover;
     }
 }
 h3{
