@@ -2,24 +2,32 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: black;
 }
-
+div{
+    img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+}
 //-----------------------------HEADER-----------------------------------
 header{
     section.nav{
         background-color: hsl(0, 0%, 0%);
         color: antiquewhite;
         div{
-            width: 50%;
+            width: 40%;
+            height: 100%;
             @include flex-row-center;
             justify-content: space-around;
             align-items: center;
             img{
-                height: 80%;
-                width: 50%;
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
             }
         }
         nav{
-            width: 50%;
+            width: 60%;
             padding: 2%;
             ul{
                 @include flex-row-center;
@@ -27,7 +35,7 @@ header{
              }
             }
             @include flex-row-center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             height: 14vh;
         }
     }
@@ -62,17 +70,42 @@ main{
         }
         div.socialRed{
             @include flex-row-center;
-            justify-content: space-around;
+            justify-content: center;
+            .iconImg{
+                height: 100px;
+                width: 100px;
+            }
         }
         div.centerSection
         {
             @include flex-row-center;
         }
-    }
-}
+        div.quienesSomos{
+            display: grid;
+            grid-area: 
+            "text img1"
+            "text img2";
+            background-color: aqua;
+         
+            img#img1{
+                display: inline-block;
+                grid-area: "img1";
+                }
+            img#img2{
+                display: inline-block;
+                grid-area: "img2";
+                
+            }
+            p#text{
+                display: inline-block;
+                grid-area: "text";
+            }
+        }
+    }}
 //-----------------------------FOOTER-----------------------------------
 footer{
     color: aliceblue;
+    margin: 30px;
     div{
         display: flex;
         flex-direction: column;
@@ -80,14 +113,6 @@ footer{
     }
 }
 //-----------------------------IMAGENES-----------------------------------
-
-div{
-    img{
-        height: 200px;
-        width: 200px;
-        object-fit: cover;
-    }
-}
 h3{
     font-weight: bold;
 }
