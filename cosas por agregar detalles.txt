@@ -1,0 +1,15 @@
+quiero imagenes con textos promocionales si o si
+un carrusel con imagenes
+un buscador en la parte superior
+medios de pago con detalles de tarjetas y envios
+formulario para suscribirse a las ofertas recientes
+acomodar textos comentarios en orden por secciones al detalles
+acomodar grids restantes donde mejor se pueda
+imagenes en diferentes tamañnos juntas con grids
+videos de youtube
+arreglar links de nav
+moldear con colores lindos los navs
+agregar animaciones en hover y active de las interacciones
+inicio que vaya a su pag
+acomodar imagenes al 100% y que no pierdan el tamanio
+arreglar la imagen principal el identado
