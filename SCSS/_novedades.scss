@@ -1,3 +1,27 @@
-*{
-    background-color: aqua;
+section{
+    div.selectorCategoria{
+        display: grid;
+        grid-area: 
+        "prod1 info"
+        "prod2 info"
+        "prod3 info"
+        "prod4 info"
+        "prod5 info"
+        "prod6 info"
+        "prod7 info"
+        "prod8 info";
+        article#prod1{grid-area: "prod1";}
+        article#prod1{grid-area: "prod2";}
+        article#prod1{grid-area: "prod3";}
+        article#prod1{grid-area: "prod4";}
+        article#prod1{grid-area: "prod5";}
+        article#prod1{grid-area: "prod6";}
+        article#prod1{grid-area: "prod7";}
+        article#prod1{grid-area: "prod8";}
+    }
 }
+ section{
+    div.selectorCategoria{background-color: aqua;}
+ }
+    body{background-color: aqua;
+ }

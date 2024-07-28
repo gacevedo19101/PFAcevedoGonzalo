@@ -128,4 +128,33 @@ h3 {
   font-weight: bold;
 }
 
+section div.selectorCategoria {
+  display: grid;
+  grid-area: "prod1 info" "prod2 info" "prod3 info" "prod4 info" "prod5 info" "prod6 info" "prod7 info" "prod8 info";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod1";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod2";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod3";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod4";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod5";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod6";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod7";
+}
+section div.selectorCategoria article#prod1 {
+  grid-area: "prod8";
+}
+
 /*# sourceMappingURL=estilos.css.map */
