@@ -8,3 +8,18 @@
 	flex-direction: column;
     align-items: center;
 }
+@mixin grid-2-4{
+	display: grid;
+	grid-template-areas: 
+	"prod1 prod2 prod3 prod4"
+	"prod5 prod6 prod7 prod8"
+	;
+	article#prod1{grid-area: prod1;}
+	article#prod2{grid-area: prod2;}
+	article#prod3{grid-area: prod3;}
+	article#prod4{grid-area: prod4;}
+	article#prod5{grid-area: prod5;}
+	article#prod6{grid-area: prod6;}
+	article#prod7{grid-area: prod7;}
+	article#prod8{grid-area: prod8;}
+}

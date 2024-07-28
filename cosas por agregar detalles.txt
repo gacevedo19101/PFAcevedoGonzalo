@@ -1,15 +1,18 @@
-quiero imagenes con textos promocionales si o si
-un carrusel con imagenes
-un buscador en la parte superior
-medios de pago con detalles de tarjetas y envios
-formulario para suscribirse a las ofertas recientes
-acomodar textos comentarios en orden por secciones al detalles
-acomodar grids restantes donde mejor se pueda
-imagenes en diferentes tamañnos juntas con grids
-videos de youtube
-arreglar links de nav
-moldear con colores lindos los navs
-agregar animaciones en hover y active de las interacciones
-inicio que vaya a su pag
-acomodar imagenes al 100% y que no pierdan el tamanio
-arreglar la imagen principal el identado
+1 quiero imagenes con textos promocionales si o si
+2  un carrusel con imagenes
+3  un buscador en la parte superior
+4  medios de pago con detalles de tarjetas y envios
+5  formulario para suscribirse a las ofertas recientes
+6  acomodar textos comentarios en orden por secciones al detalles en el html
+7  acomodar grids restantes donde mejor se pueda
+8  imagenes varias en diferentes tamañnos juntas con grids
+9  arreglar links de nav
+10  moldear con colores lindos los navs
+11  agregar animaciones en hover y active de las interacciones
+12  inicio que vaya a su pag
+13  acomodar imagenes al 100% y que no pierdan el tamanio
+14  arreglar la imagen principal el identado
+15  arreglar parrafos de los textos
+16 arreglar tamanio de imagenes en los links
+17 Corregir errores de ortografia
+18 Verificar las fonts del sitio

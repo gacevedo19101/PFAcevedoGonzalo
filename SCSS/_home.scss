@@ -39,27 +39,30 @@ header{
             height: 14vh;
         }
     }
-//--------------------------ARTICLE IAMGEN PRINCIPAL-------------------
-div.imgFirst{
-    width: 100%;
-    @include flex-row-center;
-    article{
-        width: 100%;
-        img{
-            width: 100%;
-            height: 100%;
-            height: 500px;
-            object-fit: none;
-       }
-    }
-}
 //-----------------------------MAIN-----------------------------------
 main{
     @include flex-column-center;
+    section.sectionImg{
+        width: 100% !important;
+        padding: 0px !important;
+    }
     section{
         background-color: $colorPrincipal;
-        padding: 40px;
+        // padding: 40px;
         width: 80%;
+        div.imgFirst{
+            width: 100%;
+            @include flex-row-center;
+            article{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    height: 500px;
+                    object-fit: none;
+               }
+            }
+        }
         div.selectorCategoria{
             @include flex-row-center;
             justify-content: space-evenly;
@@ -79,25 +82,6 @@ main{
         div.centerSection
         {
             @include flex-row-center;
-        }
-        div.quienesSomos{
-            background-color: aqua;
-            display: grid;
-            grid-area: 
-            "text img1"
-            "text img2";
-            img#img1{
-                display: inline-block;
-                grid-area: "img1";
-                }
-            img#img2{
-                display: inline-block;
-                grid-area: "img2";  
-            }
-            p#text{
-                display: inline-block;
-                grid-area: "text";
-            }
         }
     }}
 //-----------------------------FOOTER-----------------------------------
