@@ -34,11 +34,9 @@ header{
             width: 100%;
             @include flex-row-center;
             justify-content: space-between;
-            list-style-type: none;
             a{
-                color: aliceblue
-            }
-            li{
+                color: aliceblue;
+                list-style-type: none;
                 text-decoration: none;
             }
          }
@@ -84,6 +82,19 @@ main{
         {
             @include flex-row-center;
         }
+        div{
+            article{
+                p.textProduct{
+                    @include flex-row-center;
+                    font-weight: bold;
+                }
+            }
+            article.imgProduct{
+                background-color: aqua;
+                img{display: inline-block;}
+                @include flex-column-center;
+            }
+        }
     }
 }
 //-----------------------------FOOTER-----------------------------------
@@ -99,7 +110,4 @@ footer{
 //-----------------------------IMAGENES-----------------------------------
 h3{
     font-weight: bold;
-}
-.textProduct{
-    font-weight: bold !important;
 }
