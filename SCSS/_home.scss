@@ -50,6 +50,10 @@ main{
         width: 80% !important;
         padding: 0px !important;
     }
+    section.sectionOpuesta{
+        background-image: linear-gradient(#d636ab , rgb(75, 75, 75));
+        color: aliceblue;
+    }
     section{
         background-color: $colorPrincipal;
         padding: 40px;
@@ -82,16 +86,16 @@ main{
         {
             @include flex-row-center;
         }
-        div{background-color: #2af51c;
-            article{
+        div{
+            article.imgProduct{
+                @include flex-column-center;
                 p.textProduct{
-                    @include flex-row-center;
                     font-weight: bold;
                 }
             }
-            article.imgProduct{
-                
-                img{@include flex-row-center;}
+            article.centerFlexColumn
+            {
+                @include flex-column-center;
             }
         }
     }
@@ -109,4 +113,11 @@ footer{
 //-----------------------------IMAGENES-----------------------------------
 h3{
     font-weight: bold;
+}
+.CenterParrafo{
+    padding: 0 20% 0 20%;
+}
+.centerPosition
+{
+    @include flex-column-center;
 }
