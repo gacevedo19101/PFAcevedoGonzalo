@@ -17,3 +17,4 @@
 17 Corregir errores de ortografia
 18 Verificar las fonts del sitio
 19 cambiar los zoom stylos del nav
+20 animaciones al hover del nav con detalles

@@ -45,12 +45,10 @@ header nav ul {
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
-  list-style-type: none;
 }
 header nav ul a {
   color: aliceblue;
-}
-header nav ul li {
+  list-style-type: none;
   text-decoration: none;
 }
 
@@ -100,6 +98,24 @@ main section div.centerSection {
   flex-direction: row;
   justify-content: center;
 }
+main section div {
+  background-color: aqua;
+}
+main section div article p.textProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+}
+main section div article.imgProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section div article.imgProduct img {
+  display: inline-block;
+}
 
 footer {
   color: aliceblue;
@@ -113,10 +129,6 @@ footer div {
 
 h3 {
   font-weight: bold;
-}
-
-.textProduct {
-  font-weight: bold !important;
 }
 
 section div.selectorCategoria1 {

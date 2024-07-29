@@ -82,7 +82,7 @@ main{
         {
             @include flex-row-center;
         }
-        div{
+        div{background-color: #2af51c;
             article{
                 p.textProduct{
                     @include flex-row-center;
@@ -90,9 +90,8 @@ main{
                 }
             }
             article.imgProduct{
-                background-color: aqua;
-                img{display: inline-block;}
-                @include flex-column-center;
+                
+                img{@include flex-row-center;}
             }
         }
     }
