@@ -51,8 +51,16 @@ main{
         padding: 0px !important;
     }
     section.sectionOpuesta{
+        background-color: black;
+        color: aliceblue;
+    }
+    section.sectionGradient{
         background-image: linear-gradient(#d636ab , rgb(75, 75, 75));
         color: aliceblue;
+    }
+    section.orderSectionFlex{
+        @include flex-column-center;
+        background-color: aqua;
     }
     section{
         background-color: $colorPrincipal;
