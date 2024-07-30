@@ -2,6 +2,11 @@
 section{
     div.selectorCategoria1{
         @include grid-2-4;
+        img{
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+        }
     }
     div.imgOff{
         background-image: url("https://lh3.googleusercontent.com/d/1WbK65TSJahONKvYfzdcEdrgvjk2W_P5-");

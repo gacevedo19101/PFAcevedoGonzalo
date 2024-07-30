@@ -24,3 +24,13 @@
 	article#prod7{grid-area: prod7;}
 	article#prod8{grid-area: prod8;}
 }
+@keyframes slide {
+	0% {margin-left: 0 }
+	25% {margin-left: 0 }
+	
+	30% {margin-left: -100% }
+	70% {margin-left: -100% }
+	
+	75% {margin-left: -200% }
+	100% {margin-left: -200% }
+}
