@@ -18,3 +18,12 @@
 18 Verificar las fonts del sitio
 19 cambiar los zoom stylos del nav
 20 animaciones al hover del nav con detalles
+21 identacion en los h1 h2 h3
+22 animaciones a las fotos de los productos
+23 hcaer algo mas lindo con la imagen principal
+24 usar mapas de url para navegadores
+25 mejorar la velocidad con pages insight
+26 agregar los alt que son descripciones de imagenes
+27 usar palabras claves de seo como alt
+28 cuidar el tamanio de las imagenes en mg kb y su formato webp
+29 ahorrar tamanio en imagenes si o si
