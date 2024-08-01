@@ -191,8 +191,8 @@ main {
         background-color: aqua;
     }
     section.sectionImg {
-        width: 80% !important;
-        padding: 0px !important;
+        width: 80%;
+        padding: 0px;
     }
 
     section.orderSectionFlex {
@@ -300,20 +300,4 @@ h3 {
 
 .centerPosition {
     @include flex-column-center;
-}
-
-
-@media (min-width: 768px) {
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color: #00ffff;
-    }
-    
-}
-
-@media (min-width: 1680px) {
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color: hsl(315, 100%, 50%);
-    }
 }

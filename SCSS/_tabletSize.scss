@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     body {
         main {
             section.sectionImg{
@@ -11,7 +11,7 @@
                 div.imgFirst {
                     article {
                         img {
-                            height: 200px;
+                            height: 400px;
                         }
                     }
                 }
@@ -27,8 +27,8 @@
                         }
 
                         img {
-                            width: 140px;
-                            height: 140px;
+                            width: 200px;
+                            height: 200px;
                         }
                     }
                 }
@@ -42,8 +42,8 @@
                         }
 
                         img {
-                            width: 140px;
-                            height: 140px;
+                            width: 200px;
+                            height: 200px;
                         }
                     }
                 }
@@ -52,8 +52,8 @@
                     @include flex-column-center;
                     article{
                         .iconImg{
-                            width: 70px;
-                            height: 70px;
+                            width: 100px;
+                            height: 100px;
                         }
                     }
                 }
@@ -66,9 +66,6 @@
                 div.centerSection {
                     @include flex-column-center;
 
-                    iframe {
-                        width: 310px;
-                    }
                 }
             }
 
