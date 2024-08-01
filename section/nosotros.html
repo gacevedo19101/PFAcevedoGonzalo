@@ -26,8 +26,8 @@
                 <input type="text" name="buscar" placeholder="Buscar" />
             </form>
         </div>
-        <nav>
-            <ul class="hoverNav">
+        <nav id="navLarge">
+            <ul>
                 <li>
                     <a href="../index.html">INICIO</a>
                 </li>
@@ -44,6 +44,13 @@
                     <a href="#header">NOSOTROS</a>
                 </li>
             </ul>
+        </nav>
+        <nav id="navShort navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </nav>
     </header>
     <main>
@@ -112,25 +119,26 @@
             <div>
                 <form>
                     <div class="form-group">
-                      <label for="exampleFormControlInput1">Ingrese su nombre:</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                        <label for="exampleFormControlInput1">Ingrese su nombre:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Ingrese su email:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-                      </div>
-                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleFormControlInput1">Ingrese su celular:</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="celular">
-                      </div>
+                    </div>
                     <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Detalle su consulta:</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1">Detalle su consulta:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="buttonEnd">
                         <button type="button" class="btn btn-success">Success</button>
                     </div>
-                  </form>
+                </form>
             </div>
         </section>
         <!------Section 6------------Contactanos----------->
@@ -174,4 +182,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

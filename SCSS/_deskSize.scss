@@ -1,8 +1,10 @@
-@media (min-width: 1200px){
-    header{
-        nav#navShort{
-            width: 0;
-            display: none;
+@media (min-width: 1200px) {
+    body {
+        header {
+            nav#navShort {
+                width: 0;
+                display: none;
+            }
         }
     }
 }
