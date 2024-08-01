@@ -20,7 +20,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: hsl(0, 0%, 0%);
 }
 
 header {
@@ -60,10 +60,31 @@ header nav ul {
   justify-content: center;
   justify-content: space-between;
 }
-header nav ul a {
-  color: aliceblue;
+header nav ul li {
   list-style-type: none;
+}
+header nav ul li a {
   text-decoration: none;
+  color: aliceblue;
+  position: relative;
+  font-weight: bold;
+  margin: 0px 15px;
+}
+header nav ul li a:after {
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #b120ac;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+  transform: translateY(20px);
+}
+header nav ul li a:hover:after {
+  opacity: 1;
+  transform: translateY(15px);
 }
 
 main {
@@ -100,7 +121,60 @@ main section div.selectorCategoria article.imgProduct p.textProduct {
 main section div.selectorCategoria article.imgProduct img {
   width: 220px;
   height: 220px;
+  transition: 0.5s;
   object-fit: cover;
+}
+main section div.selectorCategoria article.imgProduct img:hover {
+  opacity: 0.5;
+}
+main section div.selectorCategoria1 {
+  display: grid;
+  grid-template-areas: "prod1 prod2 prod3 prod4" "prod5 prod6 prod7 prod8";
+}
+main section div.selectorCategoria1 article#prod1 {
+  grid-area: prod1;
+}
+main section div.selectorCategoria1 article#prod2 {
+  grid-area: prod2;
+}
+main section div.selectorCategoria1 article#prod3 {
+  grid-area: prod3;
+}
+main section div.selectorCategoria1 article#prod4 {
+  grid-area: prod4;
+}
+main section div.selectorCategoria1 article#prod5 {
+  grid-area: prod5;
+}
+main section div.selectorCategoria1 article#prod6 {
+  grid-area: prod6;
+}
+main section div.selectorCategoria1 article#prod7 {
+  grid-area: prod7;
+}
+main section div.selectorCategoria1 article#prod8 {
+  grid-area: prod8;
+}
+main section div.selectorCategoria1 article.imgProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section div.selectorCategoria1 article.imgProduct p.textProduct {
+  font-weight: bold;
+}
+main section div.selectorCategoria1 article.imgProduct img {
+  width: 220px;
+  height: 220px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+main section div.selectorCategoria1 article.imgProduct img:hover {
+  opacity: 0.5;
+}
+main section div.imgOff {
+  background-image: url("https://lh3.googleusercontent.com/d/1WbK65TSJahONKvYfzdcEdrgvjk2W_P5-");
 }
 main section div.textoImagen {
   display: flex;
@@ -119,6 +193,15 @@ main section div.socialRed article .iconImg {
   width: 100px;
   object-fit: cover;
 }
+main section div.socialRed article.iconMov img {
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+main section div.socialRed article.iconMov img:hover {
+  opacity: 0.5;
+}
 main section div.socialRed.pay {
   justify-content: space-evenly;
 }
@@ -130,11 +213,21 @@ main section div.centerSection {
   flex-direction: row;
   justify-content: center;
 }
+main section div.parrafoButtonOrder {
+  width: 80%;
+}
 main section div article.centerFlexColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+main section.flexDisperso {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: start;
+  background-color: aqua;
 }
 main section.sectionImg {
   width: 80% !important;
@@ -152,6 +245,34 @@ main section.sectionOpuesta {
 main section.sectionGradient {
   background-image: linear-gradient(#bc1595, rgb(0, 0, 0));
   color: aliceblue;
+}
+main section.formsData div h3 {
+  text-align: center;
+}
+main section.formsData div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section.formsData div form div {
+  padding: 10px;
+  width: 60%;
+}
+main section.formsData div form div.buttonEnd {
+  text-align: center;
+}
+main section.formsData div form div.buttonEnd button {
+  background-color: #b320ae;
+  color: aliceblue;
+}
+main section.sectionCarruselBoostrap {
+  padding: 0;
+}
+main section.sectionCarruselBoostrap img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
 main section.carruselSection {
   padding: 0;
@@ -212,50 +333,338 @@ h3 {
   justify-content: center;
 }
 
-section div.selectorCategoria1 {
-  display: grid;
-  grid-template-areas: "prod1 prod2 prod3 prod4" "prod5 prod6 prod7 prod8";
+@media (min-width: 768px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #00ffff;
+  }
 }
-section div.selectorCategoria1 article#prod1 {
-  grid-area: prod1;
+@media (min-width: 1680px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(315, 100%, 50%);
+  }
 }
-section div.selectorCategoria1 article#prod2 {
-  grid-area: prod2;
-}
-section div.selectorCategoria1 article#prod3 {
-  grid-area: prod3;
-}
-section div.selectorCategoria1 article#prod4 {
-  grid-area: prod4;
-}
-section div.selectorCategoria1 article#prod5 {
-  grid-area: prod5;
-}
-section div.selectorCategoria1 article#prod6 {
-  grid-area: prod6;
-}
-section div.selectorCategoria1 article#prod7 {
-  grid-area: prod7;
-}
-section div.selectorCategoria1 article#prod8 {
-  grid-area: prod8;
-}
-section div.selectorCategoria1 img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-}
-section div.imgOff {
-  background-image: url("https://lh3.googleusercontent.com/d/1WbK65TSJahONKvYfzdcEdrgvjk2W_P5-");
-}
-
-section.sectionCarruselBoostrap {
-  padding: 0;
-}
-section.sectionCarruselBoostrap img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
+@media (max-width: 767px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000000;
+  }
+  header {
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  header div.iconDale {
+    width: 30%;
+  }
+  header div.iconDale img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  header div.forms {
+    width: 20%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    list-style-type: none;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    font-weight: bold;
+    margin: 0px 15px;
+  }
+  header nav ul li a:after {
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #b120ac;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);
+  }
+  header nav ul li a:hover:after {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  main section div.imgFirst article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  main section div.selectorCategoria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "prod1 prod2" "prod3 prod4";
+  }
+  main section div.selectorCategoria article#prod1 {
+    grid-area: prod1;
+  }
+  main section div.selectorCategoria article#prod2 {
+    grid-area: prod2;
+  }
+  main section div.selectorCategoria article#prod3 {
+    grid-area: prod3;
+  }
+  main section div.selectorCategoria article#prod4 {
+    grid-area: prod4;
+  }
+  main section div.selectorCategoria article.imgProduct {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section div.selectorCategoria article.imgProduct p.textProduct {
+    font-weight: bold;
+    font-size: small;
+  }
+  main section div.selectorCategoria article.imgProduct img {
+    width: 140px;
+    height: 140px;
+    transition: 0.5s;
+    object-fit: cover;
+  }
+  main section div.selectorCategoria article.imgProduct img:hover {
+    opacity: 0.5;
+  }
+  main section div.selectorCategoria1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8";
+  }
+  main section div.selectorCategoria1 article#prod1 {
+    grid-area: prod1;
+  }
+  main section div.selectorCategoria1 article#prod2 {
+    grid-area: prod2;
+  }
+  main section div.selectorCategoria1 article#prod3 {
+    grid-area: prod3;
+  }
+  main section div.selectorCategoria1 article#prod4 {
+    grid-area: prod4;
+  }
+  main section div.selectorCategoria1 article.imgProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section div.selectorCategoria1 article.imgProduct p.textProduct {
+    font-weight: bold;
+    font-size: small;
+  }
+  main section div.selectorCategoria1 article.imgProduct img {
+    width: 140px;
+    height: 140px;
+    transition: 0.5s;
+    object-fit: cover;
+  }
+  main section div.selectorCategoria1 article.imgProduct img:hover {
+    opacity: 0.5;
+  }
+  main section div.imgOff {
+    background-image: url("https://lh3.googleusercontent.com/d/1WbK65TSJahONKvYfzdcEdrgvjk2W_P5-");
+  }
+  main section div.textoImagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  main section div.socialRed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section div.socialRed article .iconImg {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+  main section div.socialRed article.iconMov img {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    object-fit: cover;
+  }
+  main section div.socialRed article.iconMov img:hover {
+    opacity: 0.5;
+  }
+  main section div.linkRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main section div.socialRed.pay {
+    justify-content: space-evenly;
+  }
+  main section div.socialRed.pay img {
+    padding: 10px;
+  }
+  main section div.centerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section div.centerSection iframe {
+    width: 360px;
+  }
+  main section div.parrafoButtonOrder {
+    width: 80%;
+  }
+  main section div article.centerFlexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.flexDisperso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.flexDisperso div {
+    width: 90%;
+  }
+  main section.sectionImg {
+    width: 80% !important;
+    padding: 0px !important;
+  }
+  main section.orderSectionFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main section.sectionOpuesta {
+    background-color: black;
+    color: aliceblue;
+  }
+  main section.sectionGradient {
+    background-image: linear-gradient(#bc1595, rgb(0, 0, 0));
+    color: aliceblue;
+  }
+  main section.formsData div h3 {
+    text-align: center;
+  }
+  main section.formsData div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.formsData div form div {
+    padding: 10px;
+    width: 60%;
+  }
+  main section.formsData div form div.buttonEnd {
+    text-align: center;
+  }
+  main section.formsData div form div.buttonEnd button {
+    background-color: #b320ae;
+    color: aliceblue;
+  }
+  main section.carruselSection {
+    padding: 0;
+  }
+  main section.carruselSection div {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  main section.carruselSection div ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    height: 100%;
+    animation: slide 10s infinite alternate ease-in-out;
+  }
+  main section.carruselSection div ul li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: relative;
+  }
+  main section.carruselSection div ul li div {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: aliceblue;
+  }
+  main section.carruselSection div ul li img {
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    color: aliceblue;
+    margin: 30px;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer div article {
+    text-align: center;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  .CenterParrafo {
+    padding: 0%;
+  }
+  .centerPosition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
