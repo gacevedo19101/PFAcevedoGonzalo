@@ -29,6 +29,7 @@ header {
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
+  height: 15vh;
 }
 header div.iconDale {
   width: 20%;
@@ -333,108 +334,29 @@ h3 {
   justify-content: center;
 }
 
-@media (min-width: 768px) {
-  body main section.sectionImg {
+@media (max-width: 768px) {
+  body header {
+    height: 10vh;
+  }
+  body header div.iconDale {
+    width: 30%;
+  }
+  body header div.forms {
+    width: 40%;
+  }
+  body header div.forms form input {
     width: 100%;
   }
-  body main section {
-    padding: 10px;
-    width: 100%;
+  body header nav#navLarge {
+    width: 0;
+    display: none;
   }
-  body main section div.imgFirst article img {
-    height: 400px;
+  body header nav {
+    width: 20%;
   }
-  body main section div.selectorCategoria {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "prod1 prod2" "prod3 prod4";
+  body header nav button {
+    width: 20%;
   }
-  body main section div.selectorCategoria article#prod1 {
-    grid-area: prod1;
-  }
-  body main section div.selectorCategoria article#prod2 {
-    grid-area: prod2;
-  }
-  body main section div.selectorCategoria article#prod3 {
-    grid-area: prod3;
-  }
-  body main section div.selectorCategoria article#prod4 {
-    grid-area: prod4;
-  }
-  body main section div.selectorCategoria article.imgProduct {
-    width: 100%;
-  }
-  body main section div.selectorCategoria article.imgProduct p.textProduct {
-    font-size: small;
-  }
-  body main section div.selectorCategoria article.imgProduct img {
-    width: 200px;
-    height: 200px;
-  }
-  body main section div.selectorCategoria1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8";
-  }
-  body main section div.selectorCategoria1 article#prod1 {
-    grid-area: prod1;
-  }
-  body main section div.selectorCategoria1 article#prod2 {
-    grid-area: prod2;
-  }
-  body main section div.selectorCategoria1 article#prod3 {
-    grid-area: prod3;
-  }
-  body main section div.selectorCategoria1 article#prod4 {
-    grid-area: prod4;
-  }
-  body main section div.selectorCategoria1 article.imgProduct p.textProduct {
-    font-size: small;
-  }
-  body main section div.selectorCategoria1 article.imgProduct img {
-    width: 200px;
-    height: 200px;
-  }
-  body main section div.socialRed {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  body main section div.socialRed article .iconImg {
-    width: 100px;
-    height: 100px;
-  }
-  body main section div.linkRedes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  body main section div.centerSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  body main section.flexDisperso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  body main section.flexDisperso div {
-    width: 90%;
-  }
-  body main footer div article {
-    text-align: center;
-  }
-  body main .CenterParrafo {
-    padding: 0%;
-  }
-}
-@media (max-width: 767px) {
   body main section.sectionImg {
     width: 100%;
   }
@@ -536,6 +458,138 @@ h3 {
   }
   body main .CenterParrafo {
     padding: 0%;
+  }
+}
+@media (max-width: 1199) {
+  body {
+    background-color: aqua;
+  }
+  body header {
+    height: 10vh;
+  }
+  body header div.iconDale {
+    width: 30%;
+  }
+  body header div.forms {
+    width: 40%;
+  }
+  body header div.forms form input {
+    width: 100%;
+  }
+  body header nav#navLarge {
+    width: 0;
+    display: none;
+  }
+  body header nav {
+    width: 20%;
+  }
+  body header nav button {
+    width: 20%;
+  }
+  body main section.sectionImg {
+    width: 100%;
+  }
+  body main section {
+    padding: 10px;
+    width: 100%;
+  }
+  body main section div.imgFirst article img {
+    height: 400px;
+  }
+  body main section div.selectorCategoria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "prod1 prod2" "prod3 prod4";
+  }
+  body main section div.selectorCategoria article#prod1 {
+    grid-area: prod1;
+  }
+  body main section div.selectorCategoria article#prod2 {
+    grid-area: prod2;
+  }
+  body main section div.selectorCategoria article#prod3 {
+    grid-area: prod3;
+  }
+  body main section div.selectorCategoria article#prod4 {
+    grid-area: prod4;
+  }
+  body main section div.selectorCategoria article.imgProduct {
+    width: 100%;
+  }
+  body main section div.selectorCategoria article.imgProduct p.textProduct {
+    font-size: small;
+  }
+  body main section div.selectorCategoria article.imgProduct img {
+    width: 200px;
+    height: 200px;
+  }
+  body main section div.selectorCategoria1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8";
+  }
+  body main section div.selectorCategoria1 article#prod1 {
+    grid-area: prod1;
+  }
+  body main section div.selectorCategoria1 article#prod2 {
+    grid-area: prod2;
+  }
+  body main section div.selectorCategoria1 article#prod3 {
+    grid-area: prod3;
+  }
+  body main section div.selectorCategoria1 article#prod4 {
+    grid-area: prod4;
+  }
+  body main section div.selectorCategoria1 article.imgProduct p.textProduct {
+    font-size: small;
+  }
+  body main section div.selectorCategoria1 article.imgProduct img {
+    width: 200px;
+    height: 200px;
+  }
+  body main section div.socialRed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main section div.socialRed article .iconImg {
+    width: 100px;
+    height: 100px;
+  }
+  body main section div.linkRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body main section div.centerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main section.flexDisperso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main section.flexDisperso div {
+    width: 90%;
+  }
+  body main footer div article {
+    text-align: center;
+  }
+  body main .CenterParrafo {
+    padding: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  header nav#navShort {
+    width: 0;
+    display: none;
   }
 }
 
